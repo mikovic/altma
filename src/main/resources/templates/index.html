@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+
+    <link th:href="@{/plugins/font-awesome-4.7.0/css/font-awesome.min.css}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" th:href="@{/plugins/OwlCarousel2-2.3.4/owl.carousel.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/plugins/OwlCarousel2-2.3.4/owl.theme.default.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/plugins/OwlCarousel2-2.3.4/animate.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/styles/main_styles.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/styles/responsive.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/styles/my.css}">
+
+
+
+
+</head>
+<body>
+
+<div class="super_container">
+    <div class="super_overlay"></div>
+
+    <!-- Header -->
+
+    <div th:replace="~{fr-header :: header(Home)}" />
+
+    <!-- Menu -->
+    <div th:replace="~{fr-menu :: menu}" />
+
+    <!-- Home -->
+
+    <div class="home">
+
+        <!-- Home Slider -->
+        <div th:replace="~{fr-slider :: slider}" />
+    </div>
+
+    <!-- Search -->
+
+    <div th:replace="~{fr-search :: search}" />
+
+    <!-- Featured -->
+
+    <div th:replace="~{fr-featured :: featured}" />
+
+    <!-- Map Section -->
+
+    <div th:replace="~{fr-map :: map}" />
+
+    <!-- Hot -->
+
+    <div class="hot">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="section_title_container text-center">
+                        <div class="section_subtitle">the best deals</div>
+                        <div class="section_title"><h1>Today's Hot Deal</h1></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row hot_row row-eq-height">
+
+                <!-- Hot Deal Image -->
+                <div class="col-lg-6">
+                    <div class="hot_image">
+                        <div class="background_image" style="background-image:url(/static/images/hot.jpg)"></div>
+                        <div class="tags d-flex flex-row align-items-start justify-content-start flex-wrap">
+                            <div class="tag tag_house"><a href="listings.html">house</a></div>
+                            <div class="tag tag_sale"><a href="listings.html">for sale</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hot Deal Content -->
+                <div class="col-lg-6">
+                    <div class="hot_content">
+                        <div class="hot_deal">
+                            <div class="tag_price">$ 562 346</div>
+                            <div class="hot_title"><a href="#">Villa for sale</a></div>
+                            <div class="prop_location d-flex flex-row align-items-start justify-content-start">
+                                <img src="/static/images/icon_1.png" alt="">
+                                <span>280 Doe Meadow Drive Landover, MD 20785</span>
+                            </div>
+                            <div class="prop_text">
+                                <p>Nulla aliquet bibendum sem, non placerat risus venenatis at. Prae sent vulputate bibendum dictum. Cras at vehicula urna. Suspendisse fringilla lobortis justo, ut tempor leo cursus in.</p>
+                            </div>
+                            <div class="prop_agent d-flex flex-row align-items-center justify-content-start">
+                                <div class="prop_agent_image"><img src="/static/images/agent_1.jpg" alt=""></div>
+                                <div class="prop_agent_name"><a href="#">Maria Smith,</a> Agent</div>
+                            </div>
+                        </div>
+                        <div class="prop_info">
+                            <ul class="d-flex flex-row align-items-center justify-content-start flex-wrap">
+                                <li class="d-flex flex-row align-items-center justify-content-start">
+                                    <img src="/static/images/icon_2_large.png" alt="">
+                                    <div>
+                                        <div>1234</div>
+                                        <div>sq ft</div>
+                                    </div>
+                                </li>
+                                <li class="d-flex flex-row align-items-center justify-content-start">
+                                    <img src="/static/images/icon_3_large.png" alt="">
+                                    <div>
+                                        <div>2</div>
+                                        <div>baths</div>
+                                    </div>
+                                </li>
+                                <li class="d-flex flex-row align-items-center justify-content-start">
+                                    <img src="/static/images/icon_4_large.png" alt="">
+                                    <div>
+                                        <div>5</div>
+                                        <div>beds</div>
+                                    </div>
+                                </li>
+                                <li class="d-flex flex-row align-items-center justify-content-start">
+                                    <img src="/static/images/icon_5_large.png" alt="">
+                                    <div>
+                                        <div>2</div>
+                                        <div>garages</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+
+    <div class="testimonials container_reset">
+        <div class="container">
+            <div class="row row-eq-height">
+
+                <!-- Testimonials Image -->
+                <div class="col-xl-6">
+                    <div class="testimonials_image">
+                        <div class="background_image" style="background-image:url(/static/images/testimonials.jpg)"></div>
+                        <div class="testimonials_image_overlay"></div>
+                    </div>
+                </div>
+
+                <!-- Testimonials Content -->
+                <div class="col-xl-6">
+                    <div class="testimonials_content">
+                        <div class="section_title_container">
+                            <div class="section_subtitle">the best deals</div>
+                            <div class="section_title"><h1>Clients testimonials</h1></div>
+                        </div>
+
+                        <!-- Testimonials Slider -->
+                        <div class="testimonials_slider_container">
+                            <div class="owl-carousel owl-theme test_slider">
+
+                                <!-- Slide -->
+                                <div class="test_slide">
+                                    <div class="test_quote">"They helped us find our home"</div>
+                                    <div class="test_text">
+                                        <p>Nulla aliquet bibendum sem, non placerat risus venenatis at. Prae sent vulputate bibendum dictum. Cras at vehicula urna. Suspendisse fringilla lobortis justo, ut tempor leo cursus in. Nulla aliquet bibendum sem, non placerat risus venenatis at. Prae sent vulputate bibendum dictum. Cras at vehicula urna. Suspendisse fringilla lobortis justo, ut tempor leo cursus in.</p>
+                                    </div>
+                                    <div class="test_author"><a href="#">Cristinne Smith</a>, Client</div>
+                                </div>
+
+                                <!-- Slide -->
+                                <div class="test_slide">
+                                    <div class="test_quote">"They helped us find our home"</div>
+                                    <div class="test_text">
+                                        <p>Nulla aliquet bibendum sem, non placerat risus venenatis at. Prae sent vulputate bibendum dictum. Cras at vehicula urna. Suspendisse fringilla lobortis justo, ut tempor leo cursus in. Nulla aliquet bibendum sem, non placerat risus venenatis at. Prae sent vulputate bibendum dictum. Cras at vehicula urna. Suspendisse fringilla lobortis justo, ut tempor leo cursus in.</p>
+                                    </div>
+                                    <div class="test_author"><a href="#">Cristinne Smith</a>, Client</div>
+                                </div>
+
+                                <!-- Slide -->
+                                <div class="test_slide">
+                                    <div class="test_quote">"They helped us find our home"</div>
+                                    <div class="test_text">
+                                        <p>Nulla aliquet bibendum sem, non placerat risus venenatis at. Prae sent vulputate bibendum dictum. Cras at vehicula urna. Suspendisse fringilla lobortis justo, ut tempor leo cursus in. Nulla aliquet bibendum sem, non placerat risus venenatis at. Prae sent vulputate bibendum dictum. Cras at vehicula urna. Suspendisse fringilla lobortis justo, ut tempor leo cursus in.</p>
+                                    </div>
+                                    <div class="test_author"><a href="#">Cristinne Smith</a>, Client</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+
+    <div th:replace="~{footer :: footer}" />
+
+</div>
+
+
+
+
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/i18n/defaults-*.min.js"></script>
+
+
+
+<script th:src="@{/js/i18n/jquery.i18n.properties.js}"></script>
+<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU&load=SuggestView&onload=onLoad"></script>
+
+
+<script>
+ymaps.load(function() {
+  var input = document.getElementById('suggest');
+  var suggestView = new ymaps.SuggestView('suggest', {
+    offset: [10, 10]
+  });
+
+  suggestView.state.events.add('change', function() {
+    var activeIndex = suggestView.state.get('activeIndex');
+    if (typeof activeIndex == 'number') {
+      activeItem = suggestView.state.get('items')[activeIndex];
+      if (activeItem && activeItem.value != input.value) {
+        input.value = activeItem.value;
+      }
+    }
+  });
+});
+
+</script>
+
+
+
+
+
+
+
+
+<script th:src="@{/plugins/greensock/TweenMax.min.js}"></script>
+<script th:src="@{/plugins/greensock/TimelineMax.min.js}"></script>
+<script th:src="@{/plugins/scrollmagic/ScrollMagic.min.js}"></script>
+<script th:src="@{/plugins/greensock/animation.gsap.min.js}"></script>
+<script th:src="@{/plugins/greensock/ScrollToPlugin.min.js}"></script>
+<script th:src="@{/plugins/OwlCarousel2-2.3.4/owl.carousel.js}"></script>
+<script th:src="@{/plugins/easing/easing.js}"></script>
+<script th:src="@{/plugins/progressbar/progressbar.min.js}"></script>
+<script th:src="@{/plugins/parallax-js-master/parallax.min.js}"></script>
+<script th:src="@{https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA}"></script>
+<script th:src="@{/js/custom.js}"></script>
+<script th:src="@{/js/i18n/my.js}"></script>
+
+<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<script  type="text/babel"  th:src="@{/js/i18n/MyForm.js}"></script>
+<script src="built/bundle.js"></script>
+<script>
+<!--$("#my-multi").selectpicker();-->
+</script>
+</body>
+</html>
+
+

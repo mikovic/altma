@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<html>
+<head>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+<p><span th:text="#{greeting(${name})}">Hello! </span></p>
+
+
+
+
+<p>
+    <a th:href="${url}"><span th:text="#{click.here}">Click here to confirm!</span></a>
+</p>
+<p>
+<p><span th:text="#{mail.message1}"/><span th:text="' ' + ${url}"/></p>
+</p>
+<p>
+<p><span th:text="#{mail.message2}"></span></p>
+</p>
+
+
+</body>
+</html>
+
+
+
+
+
+

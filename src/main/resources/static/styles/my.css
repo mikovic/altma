@@ -1,0 +1,34 @@
+.search_f {
+    width: calc((100% - 22px)/2.2);
+    height: 51px;
+    padding-left: 27px;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2b2e35;
+}
+.search_l {
+    width: calc((100% - 22px)/4);
+    height: 51px;
+    padding-left: 27px;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2b2e35;
+}
+.form-control {
+    color: #2b2e35;
+
+}
+.price {
+    border: 2px solid red;
+
+}
+.bootstrap-select>.dropdown-toggle.bs-placeholder {
+    color: #2b2e35;
+
+}
